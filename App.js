@@ -11,15 +11,15 @@ const App = () => {
   const [items, setItems] = useState([
     {
       id: global.lib.getId(),
-      text: 'iPhone 14 Pro',
+      text: 'iPhone 14 Pro'
     },
     {
       id: global.lib.getId(),
-      text: 'MacBook Air M2',
+      text: 'MacBook Air M2'
     },
     {
       id: global.lib.getId(),
-      text: 'AirPods',
+      text: 'AirPods'
     },
   ]);
 
@@ -30,9 +30,9 @@ const App = () => {
     if (text) {
       setItems([...items, {id: global.lib.getId(), text}]);
     } else {
-      Alert.alert('Error', "Enter the shopping item first");
+      Alert.alert('Error', 'Enter the shopping item first');
     }
-  }
+  };
 
   return (
     <View style={styles.container}>
